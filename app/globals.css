@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-display: 'Rajdhani', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+}
+
+body {
+  background: #0d0d0f;
+  color: #e8e8f0;
+  font-family: var(--font-display);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #16161a; }
+::-webkit-scrollbar-thumb { background: #2a2a32; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #444460; }
+
+/* Range input styling */
+input[type="range"] {
+  height: 4px;
+  cursor: pointer;
+}
